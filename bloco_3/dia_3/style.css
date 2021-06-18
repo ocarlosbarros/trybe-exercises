@@ -21,6 +21,10 @@
     margin:30px;
   }
 
+  .margin-right{
+    margin-right:-4px;
+}
+
   /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
   .border {
     border:5px solid black;
