@@ -4,8 +4,8 @@
  * @since 06/23/2021
  */
 
-//Multiplicacao
+//Divisão
 let a = 10;
 let b = 5;
 
-console.log(a * b);//50
+console.log(a / b);//2
