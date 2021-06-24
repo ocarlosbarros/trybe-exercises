@@ -1,3 +1,9 @@
+/***
+ * @author Carlos Barros
+ * @version 1.0.0
+ * @since 06/23/2021
+ */
+
 let piece = 'KING'
 
 switch (piece.toLowerCase()){
