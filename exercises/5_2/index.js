@@ -51,4 +51,5 @@ divCenter.appendChild(paragraph);
 
 divMain.removeChild(divLeftContent);
 divRightContent.style.marginRight = 'auto';
+divCenter.style.backgroundColor = 'green';
 
