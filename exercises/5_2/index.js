@@ -32,7 +32,8 @@ const headers = ['Targaryen', 'Stark', 'Lannister'];
 
 for(let item = 0; item < headers.length; item += 1){
   let headerLevel_3 = document.createElement('h3');
-  headerLevel_3.innerHTML = headers[item]; 
+  headerLevel_3.innerHTML = headers[item];
+  headerLevel_3.className = 'description'; 
   divMain.appendChild(headerLevel_3);
 }
 
