@@ -10,6 +10,7 @@ const image = document.createElement('img');
 const unorderedList = document.createElement('ul');
 
 header.innerHTML = 'Exercício 5.2 - Javascript DOM';
+header.className = 'title';
 divMain.className = 'main-content';
 divCenter.className = 'center-content';
 paragraph.innerHTML = 'Game Of Thrones';
@@ -27,11 +28,23 @@ for (let index = 0; index < listItems.length; index += 1){
   unorderedList.appendChild(item);
 }
 
+const headers = ['Targaryen', 'Stark', 'Lannister'];
+
+for(let item = 0; item < headers.length; item += 1){
+  let headerLevel_3 = document.createElement('h3');
+  headerLevel_3.innerHTML = headers[item]; 
+  divMain.appendChild(headerLevel_3);
+}
+
+
 body.appendChild(header);
 body.appendChild(divMain);
+
+
 divMain.appendChild(divCenter);
 divMain.appendChild(divLeftContent);
 divLeftContent.appendChild(image);
 divMain.appendChild(divRightContent);
 divRightContent.appendChild(unorderedList);
 divCenter.appendChild(paragraph);
+
