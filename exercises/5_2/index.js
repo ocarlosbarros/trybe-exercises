@@ -50,4 +50,5 @@ divRightContent.appendChild(unorderedList);
 divCenter.appendChild(paragraph);
 
 divMain.removeChild(divLeftContent);
+divRightContent.style.marginRight = 'auto';
 
