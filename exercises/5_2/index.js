@@ -53,3 +53,14 @@ divMain.removeChild(divLeftContent);
 divRightContent.style.marginRight = 'auto';
 divCenter.style.backgroundColor = 'green';
 
+const listNumbers = document.querySelector('ul');
+console.log(listNumbers)  
+for (let index = 0; index < listNumbers.length; index += 1) {
+    if(listNumbers[index].innerHTML === 'Nove' | listNumbers[index].innerHTML === 'Dez'){
+      listNumbers.removeChild(li);
+    }
+    
+  }
+  
+
+
