@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css">
+  <title>Currículo</title>
+</head>
+<body>
+  <header>
+    <h1>Envie seu Currículo</h1>
+  </header>
+  <main>
+  <fieldset>
+    <legend>Dados pessoais</legend>
+    <label for="field-name">Nome:</label>
+    <input type="text" maxlength="40" required id="field-name">
+    <label for="field-email">Email:</label>
+    <input type="text" maxlength="50" required id="field-email">
+    <label for="field-cpf">CPF:</label>
+    <input type="text" maxlength="11" required id="field-cpf">
+    <label for="field-address">Endereço</label>
+    <input type="text" maxlength="200" required id="field-address">
+    <label for="field-city">Cidade</label>
+    <input type="text" maxlength="28" required id="field-city">
+    <label for="field-state">
+      Estado:
+      <select name="estado" id="field-state">
+      </select>
+    </label>
+  </fieldset>
+  </main>
+  <footer>
+
+  </footer>
+<script src="form.js"></script>
+</body>
+</html>
