@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="form.css">
   <title>Currículo</title>
 </head>
+
 <body>
   <header>
     <h1>Envie seu Currículo</h1>
   </header>
   <main>
-  <fieldset>
-    <legend>Dados pessoais</legend>
-    <label for="name-field">Nome:</label>
-    <input type="text" maxlength="40" required id="name-field">
-    <label for="email-field">Email:</label>
-    <input type="text" maxlength="50" required id="email-field">
-    <label for="cpf-field">CPF:</label>
-    <input type="text" maxlength="11" required id="cpf-field">
-    <label for="address-field">Endereço</label>
-    <input type="text" maxlength="200" required id="address-field">
-    <label for="city-field">Cidade</label>
-    <input type="text" maxlength="28" required id="city-field">
-    <label for="state-field">
-      Estado:
-      <select name="state" id="field-state"></select>
-    </label>
-    <input type="radio" name="compliment-field" id="home-field">
-    <label for="home-field">Casa</label>
-    <input type="radio" name="compliment-field" id="apartment-field">
-    <label for="apartment-field">Apartamento</label>
-  </fieldset>
+    <form action="">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+        <label class="form-label" for="name-field">Nome:</label>
+        <input class="form-control" type="text" maxlength="40" required id="name-field">
+        <label class="form-label" for="email-field">Email:</label>
+        <input class="form-control" type="text" maxlength="50" required id="email-field">
+        <label class="form-label" for="cpf-field">CPF:</label>
+        <input class="form-control" type="text" maxlength="11" required id="cpf-field">
+        <label class="form-label" for="address-field">Endereço</label>
+        <input class="form-control" type="text" maxlength="200" required id="address-field">
+        <label class="form-label" for="city-field">Cidade</label>
+        <input class="form-control" type="text" maxlength="28" required id="city-field">
+        <label class="form-label" for="state-field">
+          Estado:
+          <select name="state" id="field-state"></select>
+        </label>
+        <input type="radio" name="compliment-field" id="home-field">
+        <label class="form-label" for="home-field">Casa</label>
+        <input type="radio" name="compliment-field" id="apartment-field">
+        <label class="form-label" for="apartment-field">Apartamento</label>
+      </fieldset>
+      <fieldset>
+        <legend>Dados do seu último emprego</legend>
+        <label class="form-label" for="summary">Resumo do Currículo</label>
+        <textarea name="summary" id="summary" maxlength="1000" col="30" rows="10" required
+          placeholder="Digite um resumo do seu currículo"></textarea>
+        <label class="form-label" for="position-field">Cargo:</label>
+        <input type="text" maxlength="40" required id="position-field">
+        <label class="form-label" for="position-description-field">Cargo:</label>
+        <input type="text" maxlength="500" required id="position-description-field">
+        <label class="form-label" for="start-date-field">Data de Início:</label>
+        <input type="text" id="day-field" pattern="[1-32]" placeholder="dia">
+        <input type="text" id="month-field" pattern="[1-13]" placeholder="mês">
+        <input type="text" id="year-field" pattern="[0-9]" placeholder="ano">
+      </fieldset>
+      <button type="submit" id="btn-send">Enviar</button>
+    </form>
+    <div>
+
+    </div>
   </main>
   <footer>
 
   </footer>
-<script src="form.js"></script>
+  <script src="form.js"></script>
 </body>
+
 </html>

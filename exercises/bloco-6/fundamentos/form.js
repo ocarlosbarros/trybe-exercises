@@ -11,4 +11,11 @@ function FillSelectField(){
   }
 }
 
+function sendData(){
+  const btnSend = document.getElementById('btn-send');
+  btnSend.addEventListener('click', event => {
+    event.preventDefault();
+  });
+}
+sendData();
 FillSelectField();
