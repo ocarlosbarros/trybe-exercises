@@ -24,10 +24,4 @@ const createEmployee = (name) => {
   };
 };
 
-const myCompanyStaff = newEmployees(createEmployee);
-
-assert.strictEqual(typeof myCompanyStaff.id1, "object");
-assert.strictEqual(typeof newEmployees, "function");
-assert.strictEqual(typeof newEmployees(), "function");
-assert.strictEqual(typeof createEmployee, "function");
-assert.strictEqual(typeof createEmployee("Gustavo Dias"), "object");
+console.log(newEmployees(createEmployee));
